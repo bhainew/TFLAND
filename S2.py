@@ -18,9 +18,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 BLOCKED_COMMANDS = ["nano", "sudo", "rm", "rm -rf", "screen"]
 BLOCKED_PORTS = {10000, 10001, 10002, 17500, 20000, 20001, 20002, 443}
 
-TOKEN = '7475040161:AAGanH5nTUP-03VxVvvl7_RfOueUJ4zEbBI'  # Replace with your actual bot token
+TOKEN = '7581868845:AAEffnC_tB8vuVxM201nX9kyjtHAu7lG-YM'  # Replace with your actual bot token
 ADMIN_IDS = [7479349647]  # Added new admin ID
-CHANNEL_ID = '-1002278092576'  # Replace with your specific channel or group ID
+CHANNEL_ID = '-1002681382316'  # Replace with your specific channel or group ID
 
 bot = telebot.TeleBot(TOKEN)
 
