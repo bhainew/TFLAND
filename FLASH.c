@@ -48,7 +48,7 @@ void print_banner() {
 }
 
 void usage() {
-    printf("Usage: ./FLASH ip port time threads\n");
+    printf("Usage: ./bgmi ip port time threads\n");
     exit(1);
 }
 
